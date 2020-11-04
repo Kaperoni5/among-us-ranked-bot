@@ -6,6 +6,8 @@ const prefix = '-';
 
 const fs = require('fs');
 
+const token = require('./token')
+
 client.commands = new Discord.Collection();
  
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
@@ -37,4 +39,4 @@ client.on('message', message =>{
 client.login('   ');
 
 
-client.login('NzczMzMyODMzNDMwMTQyOTc2.X6HsUw.bYRoAK2rWgqAlhzeCwWDMGCtO5k');
+client.login(token);
