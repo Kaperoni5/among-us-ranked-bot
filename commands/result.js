@@ -1,10 +1,7 @@
 module.exports = {
-    name: 'match',
+    name: 'result',
     description: "",
     execute(message, args){
-
-
-
 
     }
 }

@@ -32,8 +32,8 @@ client.on("message", (message) => {
 
   if (command === "ping") {
     client.commands.get("ping").execute(message, args);
-  } else if (command === "match") {
-    client.commands.get("match").execute(message, args);
+  } else if (command === "result") {
+    client.commands.get("result").execute(message, args);
   }
 });
 
