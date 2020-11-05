@@ -1,7 +1,7 @@
 module.exports = {
     name: 'result',
     description: "",
-    execute(message, args){
-
+    execute(message, messageContent){
+        message.guild.channels.cache.find(i => i.name === 'results').send(messageContent)
     }
 }
